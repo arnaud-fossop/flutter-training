@@ -4,7 +4,7 @@ import './products.dart';
 class ProductManager extends StatefulWidget {
   String startinProduct;
 
-  ProductManager(this.startinProduct);
+  ProductManager({this.startinProduct});
   @override
   State<StatefulWidget> createState() {
     return _ProductManagerState();
