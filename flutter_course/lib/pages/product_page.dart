@@ -9,9 +9,10 @@ class ProductPage extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            Image.asset('assets/food.jpg'),
             Text('Details'),
             RaisedButton(
               child: Text("BACK"),
