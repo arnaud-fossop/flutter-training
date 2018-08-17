@@ -23,9 +23,15 @@ class _ProductManagerState extends State<ProductManager> {
     }
   }
 
-  _addProducts(Map<String, String> product) {
+  void _addProducts(Map<String, String> product) {
     setState(() {
       _products.add(product);
+    });
+  }
+
+  void _deleteProduct(index) {
+    setState(() {
+      _products.removeAt(index);
     });
   }
 
@@ -38,7 +44,7 @@ class _ProductManagerState extends State<ProductManager> {
           child: ProductControl(_addProducts),
         ),
         Expanded(
-          child: Products(_products),
+          child: Products(_products, deleteProduct: _deleteProduct),
         ),
       ],
     );
