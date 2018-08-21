@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './pages/product_page.dart';
+import './pages/product.dart';
 
 class Products extends StatelessWidget {
   final List<Map> products;
